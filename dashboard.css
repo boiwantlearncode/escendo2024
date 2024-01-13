@@ -36,14 +36,14 @@ p {
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #F3F3F3;
+  background-color: #FAFAFA;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 main {
-  background-color: #EEEEEE;
+  background-color: #F7F7F7;
   height: 70vh;
   width: 75vw;
   border-radius: 10px;
@@ -54,7 +54,7 @@ main {
   flex-flow: row nowrap;
   height: 14vh;
   width: 75vw;
-  background-color: #EBEBEB;
+  background-color: #F4F4F4;
   justify-content: space-between;
   align-items: center;
   padding-left: 60px;
@@ -72,7 +72,6 @@ main {
   height: 56vh;
   width: 100%;
   overflow-y: scroll;
-  /* overflow-x: hidden; */
 }
 
 .capsule {
@@ -116,7 +115,6 @@ main {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  /* background-color: red; */
   padding-left: 75px;
   padding-right: 50px;
 }

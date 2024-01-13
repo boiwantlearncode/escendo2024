@@ -7,36 +7,66 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>Status Report</h1>
   <main>
-    <div class="inner-main">
-      <div class="row">
-        <p>Humidity</p>
-        <div>
-          <p id="humidity">75</p>
-          <p>RH</p>
+    <h1>Sensor 2</h1>
+    <div class="row">
+      <button class="card" onclick="switchTab(e, humidity)">
+        <h3>Humidity</h3>
+        <div class="inner-row">
+          <div class="text-row">
+            <p id="humidity">75</p>
+            <p>RH</p>
+          </div>
+          <div class="capsule safe">Safe</div>
         </div>
-      </div>
-      <div class="row">
-        <p>Temperature</p>
-        <div>
-          <p id="temperature">28</p>
-          <p>ºC</p>
+      </button>
+      <button id="temperature-card" class="card">
+        <h3>Temperature</h3>
+        <div class="inner-row">
+          <div class="text-row">
+            <p id="temperature">75</p>
+            <p>ºC</p>
+          </div>
+          <div id="temperature-capsule" class="capsule safe">Safe</div>
         </div>
-      </div>
-      <div class="row">
-        <p>Heat Index</p>
-        <div>
-          <p id="heatindex">38</p>
-          <p>ºC</p>
+      </button>
+      <button class="card">
+        <h3>Heat Index</h3>
+        <div class="inner-row">
+          <div class="text-row">
+            <p id="heatindex">75</p>
+            <p>ºC</p>
+          </div>
+          <div class="capsule safe">Safe</div>
         </div>
-      </div>
-      <p>Sound</p>
-      <div>
-        <canvas id="myChart" width="500" height="400"></canvas>
-      </div>
+      </button>
+      <button id="sound-card" class="card active">
+        <h3>Sound</h3>
+        <div class="inner-row">
+          <div class="text-row">
+            <p id="sound">75</p>
+            <p>DB</p>
+          </div>
+          <div id="sound-capsule" class="capsule safe">Safe</div>
+        </div>
+      </button>
     </div>
   </main>
+  <h1>Sound</h1>
+  <div>
+    <canvas id="myChart" width="500" height="400"></canvas>
+  </div>
+  <h2 style="margin-top: 5vh;">History</h2>
+  <div style="margin-top: 3vh">
+    <div class="history-record">
+      <p><strong>Chainsaw sound</strong> detected for 11 minutes.</p> 
+      <p>12 Jan 2024, 17:00</p>
+    </div>
+    <div class="history-record">
+      <p><strong>Chainsaw sound</strong> detected for 7 minutes.</p> 
+      <p>12 Jan 2024, 17:23</p>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="index.js"></script>
 </body>

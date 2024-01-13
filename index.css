@@ -18,19 +18,21 @@ p {
 }
 
 body {
-  background-color: #F3F3F3;
+  background-color: #FAFAFA;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-bottom: 10vh;
 }
 
 main {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: #EEECEC;
-  width: 80vw;
-  height: 110vh;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F7F7F7;
+  width: 100vw;
+  height: 35vh;
   margin-bottom: 5vh;
   border-radius: 8px;
 }
@@ -51,20 +53,93 @@ main {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 75%;
   margin-bottom: 5vh;
 }
 
-.row div {
-  height: 60px;
-  width: 140px;
+.inner-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #FAFAFA;
+  border: 1px solid #E9E9E9;
+  width: 260px;
+  height: 103px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 23px 25px 23px 32px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card h3 {
+  color: #8B8B8B;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.capsule {
+  width: 60px;
+  height: 20px;
+  border: 1px solid;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F3F1F1;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  font-size: 10px;
 }
 
-.error {
-  color: red;
+.safe {
+  background-color: #E1F8D6;
+  border-color: #A9D892;
+  color: #67BF3D;
+}
+
+.danger {
+  background-color: #F6E0E0;
+  border-color: #DDA6A6;
+  color: #CF6262;
+}
+
+.active {
+  border-width: 2px;
+  background-color: #f9f9f9;
+  filter: drop-shadow(0 0 0.1rem black);
+}
+
+.text-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.history-record {
+  background-color: #F6E0E0;
+  border-color: #DDA6A6;
+  border-radius: 5px;
+  color: #CF6262;
+  width: 50vw;
+  height: 5vh;
+  padding: 1.5vh 1vw;
+  margin-bottom: 5px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history-record p {
+  color: #CF6262;
+  font-size: 16px;
+  font-weight: 400;
 }
